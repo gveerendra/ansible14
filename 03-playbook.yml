@@ -3,6 +3,6 @@
    hosts: web
    tasks:
    - name: install nginx
-     ansible.builtin.packages:
+     ansible.builtin.package:
        name: nginx
        state: present
