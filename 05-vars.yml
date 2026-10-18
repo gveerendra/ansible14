@@ -9,6 +9,6 @@
    - name: print variables
      vars:
       course: "devops"
-      ansible.builtin.debug:
+     ansible.builtin.debug:
       msg: "course is: {{course}}, duration is {{duration}}"
      
