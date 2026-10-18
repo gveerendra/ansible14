@@ -2,7 +2,7 @@
  - name: play level variables
    hosts: local
    connection: local
-   var_files:
+   vars_files:
    - course.yml
    tasks:
    - name: print variables
