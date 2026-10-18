@@ -8,6 +8,6 @@
    - name: print variables
      vars:
       course: "ansible"
-      duration: "140 hrs"
+    
      ansible.builtin.debug:
       msg: "course is: {{course}}, duration is: {{duration}}" 
