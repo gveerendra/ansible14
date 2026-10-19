@@ -3,7 +3,7 @@
    hosts: local
    connection: local
    vars_files:
-   - 19-course.yml:
+   - 19-course.yml
    tasks:
    - name: print level variables
      vars:
