@@ -1,0 +1,11 @@
+---
+ - name: play level variables
+   hosts: local
+   connection: local
+   19-course.yml:
+   tasks:
+   - name: print level variables
+     course: "ansible"
+     trainer: veerendra
+     ansible.builtin.debug:
+      msg: "course is: {{ course}}, duration is: {{duration}}"
