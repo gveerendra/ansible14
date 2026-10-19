@@ -11,5 +11,5 @@
       vars:
        course: ansible
        duration: "45 days"
-       ansible.builtin.debug:
+      ansible.builtin.debug:
         msg: "course is: {{course}}, duration is {{duration}}"
