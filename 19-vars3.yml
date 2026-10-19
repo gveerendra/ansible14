@@ -5,6 +5,7 @@
    19-course.yml:
    tasks:
    - name: print level variables
+     vars:
      course: "ansible"
      trainer: veerendra
      ansible.builtin.debug:
