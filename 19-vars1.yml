@@ -2,8 +2,9 @@
  - name: play level variables
    hosts: local
    connection: local
-   course: "devops"
-   duration: "45 days"
+   vars:
+    course: "devops"
+    duration: "45 days"
    tasks:
    - name: print variables
      ansible.builtin.debug:
