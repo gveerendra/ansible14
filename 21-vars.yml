@@ -4,7 +4,6 @@
    connection: local
    course: "devops"
    tasks:
-   
    - name: print variables
      ansible.builtin.debug:
       msg: "course is: {{course}}"
