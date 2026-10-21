@@ -2,10 +2,7 @@
  - name: play level variables
    hosts: local
    connection: local
-   vars:
-    course: "devops"
-    duration: "45 days"
-    trainer: "veerendra"
+   
    tasks: 
     - name: print level variables
       vars:
