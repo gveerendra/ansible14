@@ -3,22 +3,22 @@
    hosts: local
    connection: local
    vars:
-    PROGRAM: "java AND PHP"
-    DURATION: "45 days"
-    IS_LIVE: true
-    DETAILS:
-     MONTHS: 4
-     TRAINER: shiva
-    TOPICS:
+     PROGRAM: "java AND PHP"
+     DURATION: "45 days"
+     IS_LIVE: true
+     DETAILS:
+      MONTHS: 4
+      TRAINER: shiva
+     TOPICS:
      - ansible
      - linux
      - shell
-    tasks:
-    - name: print variables
-    ansible.builtin.debug:
-     msg: |
-      program: {{PROGRAM}}  
-      duration: {{DURATION}}
-      is live?: {{IS_LIVE}}
-      details: {{DETAILS}}
-      topics: {{TOPICS}}
+   tasks:
+   - name: print variables
+     ansible.builtin.debug:
+      msg: |
+       program: {{PROGRAM}}  
+       duration: {{DURATION}}
+       is live?: {{IS_LIVE}}
+       details: {{DETAILS}}
+       topics: {{TOPICS}}
