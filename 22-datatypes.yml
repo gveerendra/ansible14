@@ -1,0 +1,25 @@
+---
+ - name: data types demo
+   hosts: local
+   connection: local
+   vars:
+    program: "java"
+    duration: "45 days"
+    is live: yes
+    details:
+     months: 4
+     trainer: shiva
+    topics:
+     - ansible
+     - linux
+     - shell
+    tasks:
+    - name: print variables
+    ansible.builtin.debug:
+    msg: |
+    program: {{program}}  
+    duration: {{duration}}
+    is live: {{is live}}
+    details: {{details}}
+    topics: {{topics}}
+    
