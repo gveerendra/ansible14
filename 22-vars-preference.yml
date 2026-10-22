@@ -1,15 +1,15 @@
 ---
- - name: var pref
+ - name: variable preference
    hosts: local
    connection: local
    vars_files:
-    course.yml
+   - course.yml
    vars:
     NAME: "ansible from play"
    vars_prompt:
-    - name: NAME
-      prompt: enter name
-      private: false
+   - name: NAME
+     prompt: enter name
+     private: false
 
    tasks:
    - name: print name
