@@ -1,0 +1,24 @@
+---
+ - name: data types
+   hosts: local 
+   connection: local
+   vars:
+    COURSE: "devops with aws"
+    DURATION: "45 days"
+    IS_LIVE: true
+    DETAILS:
+     MONTHS: 4
+     TRAINER: "SHIVA KUMAR"
+    TOPICS:
+    - linux
+    - shell
+    - python
+    tasks:
+    - name: print datatypes
+      ansible.builtin.debug:
+       msg: | 
+        course: {{COURSE}} 
+        duration: {{DURATION}}
+        is_live?: {{IS_LIVE}}
+        details: {{DETAILS}}
+        topics: {{TOPICS}}
