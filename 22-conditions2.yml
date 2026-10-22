@@ -8,4 +8,4 @@
    - name:
      ansible.builtin.debug: 
       msg: "is true"
-     when: SESSIONS > 5  
+     when: SESSIONS > 10
