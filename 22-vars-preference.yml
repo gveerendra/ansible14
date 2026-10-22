@@ -5,7 +5,7 @@
    vars_files:
     course.yml
    vars:
-    NAME: ansible from play
+    NAME: "ansible from play"
    vars_prompt:
     - name: NAME
       prompt: enter name
