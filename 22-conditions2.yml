@@ -1,0 +1,11 @@
+---
+ - name: check number
+   hosts: local
+   connection: local
+   vars: 
+    SESSIONS: 7
+   tasks:
+   - name:
+     ansible.builtin.debug: 
+     msg: "is true"
+   when: SESSIONS > 5  
