@@ -2,7 +2,8 @@
  - name: play level variables
    hosts: local
    connection: local
-   course: "devops"
+   vars:
+    course: "devops"
    tasks:
    - name: print variables
      ansible.builtin.debug:
