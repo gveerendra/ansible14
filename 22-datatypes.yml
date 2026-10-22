@@ -5,7 +5,7 @@
    vars:
     program: "java"
     duration: "45 days"
-    is live: yes
+    is live: true
     details:
      months: 4
      trainer: shiva
@@ -22,4 +22,3 @@
     is live: {{is live}}
     details: {{details}}
     topics: {{topics}}
-    
