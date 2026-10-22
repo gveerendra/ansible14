@@ -3,7 +3,7 @@
    hosts: local
    connection: local
    vars:
-    PROGRAM: "java"
+    PROGRAM: "java AND PHP"
     DURATION: "45 days"
     IS_LIVE: true
     DETAILS:
