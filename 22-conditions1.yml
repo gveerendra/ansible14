@@ -1,0 +1,11 @@
+---
+ - name: condistion stmt
+   hosts: local
+   connection: local
+   vars:
+    IS_LIVE: true
+   tasks:
+   - name: check the condition
+     ansible.builtin.debug:
+      msg: "condistion is true"
+     when: IS_LIVE
