@@ -1,0 +1,20 @@
+---
+ - name: var pref
+   hosts: local
+   connection: local
+   vars_files:
+    course.yml
+   vars:
+    NAME: ansible from play
+   vars_prompt:
+    - name: NAME
+      prompt: enter name
+      private: false
+
+   tasks:
+   - name: print name
+   vars: 
+    NAME: "ansible from task"
+    ansible.builtin.debug:
+     msg: "hi {{NAME}}"
+
