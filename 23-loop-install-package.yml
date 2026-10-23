@@ -9,5 +9,5 @@
       name: "{{ item }}"
       state: present
      loop:
-     - zip
+     - java
      - mysql
