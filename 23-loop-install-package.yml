@@ -6,7 +6,7 @@
    tasks:
    - name: package install
      ansible.builtin.package:
-      name: "{{item}}"
+      name: "{{ item }}"
       state: present
      loop:
      - nginx
