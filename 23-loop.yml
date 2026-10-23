@@ -5,7 +5,7 @@
    tasks:
    - name: loopcheck
      ansible.builtin.debug:
-      msg: hello "{{iteam}}"
+      msg: "hello {{iteam}}"
      loop: 
      - ramesh
      - suresh
