@@ -6,7 +6,7 @@
    - name: loopcheck
      ansible.builtin.debug:
       msg: hello "{{iteam}}"
-   loop: 
-   - ramesh
-   - suresh
-   - harish  
+     loop: 
+     - ramesh
+     - suresh
+     - harish  
