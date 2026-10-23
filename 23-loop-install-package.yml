@@ -9,5 +9,5 @@
       name: "{{ item }}"
       state: present
      loop:
-     - nginx
+     - zip
      - mysql
