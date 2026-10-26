@@ -1,0 +1,34 @@
+---
+ - name: demo on filters
+   hosts: local
+   connection: local
+   vars: 
+    topics: linux, shell, ansible, terraform
+    course: "devops with ansible"
+    tagsmap: 
+     name: ansible
+     project: roboshop
+     component: catologue
+    tagslist: [
+      {
+        "key": "name",
+        "value": "ansible"
+      },
+      {
+        "project": "project",
+        "value": "roboshop"
+      },
+      {
+        "key": "component",
+        "value": "catologue"
+      }
+    
+    ] 
+
+   tasks:
+   - name: greeting
+     ansible.builtin.debug:
+      msg: "hi shiva {{ GREETING | default('good morning')}}" 
+   - name: convert string to list
+     ansible.builtin.debug:
+      msg: "{{ course | upper }}"
