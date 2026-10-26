@@ -33,6 +33,10 @@
      ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
 
-   - name: convert lower to list
+   - name: convert lower to upper
      ansible.builtin.debug:
       msg: "{{ course | upper }}"
+
+   - name: convert upper to lower
+     ansible.builtin.debug:
+      msg: "{{ course | lower }}"   
