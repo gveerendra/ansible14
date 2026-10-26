@@ -31,4 +31,8 @@
       msg: "hi shiva {{ GREETING | default('good morning')}}" 
    - name: convert string to list
      ansible.builtin.debug:
+      msg: "{{ topic | split(',') }}"
+
+    - name: convert string to list
+     ansible.builtin.debug:
       msg: "{{ course | upper }}"
