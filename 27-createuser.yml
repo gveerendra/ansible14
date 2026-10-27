@@ -3,6 +3,7 @@
    become: yes
    connection: local
    hosts: local
+   name: veeru
    tasks:
    - name: create user
      ansible.builtin.user:
