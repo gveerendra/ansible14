@@ -6,4 +6,4 @@
    - name: check the user
      ansible.builtin.command: id roboshop
      register: id_user
-     
+     ignore_errors: true
