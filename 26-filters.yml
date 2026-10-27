@@ -15,7 +15,7 @@
         "value": "ansible"
       },
       {
-        "project": "project",
+        "key": "project",
         "value": "roboshop"
       },
       {
