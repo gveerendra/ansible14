@@ -1,0 +1,9 @@
+---
+ - name: create user
+   become: yes
+   connection: local
+   hosts: local
+   tasks:
+   - name: create user
+     ansible.builtin.user:
+      name: veeru
