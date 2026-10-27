@@ -7,3 +7,7 @@
      ansible.builtin.command: id roboshop
      register: id_user
      ignore_errors: true
+
+   - name: print output
+     ansible.builtin.debug:
+      msg: "{{ id_user }}"  
