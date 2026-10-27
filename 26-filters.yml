@@ -6,9 +6,9 @@
     topics: linux, shell, ansible, terraform
     course: "devops with ansible"
     tagsmap: 
-     name: ansible
-     project: roboshop
-     component: catologue
+     name: "ansible"
+     project: "roboshop"
+     component: "catologue"
     tagslist: [
       {
         "key": "name",
