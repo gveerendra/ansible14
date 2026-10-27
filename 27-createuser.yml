@@ -7,3 +7,5 @@
    - name: create user
      ansible.builtin.user:
       name: veeru
+     ansible.builtin.debug:
+      msg: "{{ name }}" 
